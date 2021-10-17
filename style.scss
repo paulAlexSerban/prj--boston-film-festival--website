@@ -1,0 +1,601 @@
+@import 'variables';
+
+.body {
+    &__base {
+        overflow: scroll;
+        font-size: 15px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $main-background;
+        color: $text-and-borders;
+
+        @media (min-width: $tablet) {
+            font-size: 13px;
+            max-width: 1200px;
+        }
+    }
+
+    p {
+        line-height: 1.2em;
+        max-width: 60ch;
+        overflow: hidden;
+        white-space: initial;
+    }
+
+    h1 {
+        font-weight: lighter;
+        font-size: 10vw;
+        word-break: break-all;
+        font-family: $title-font;
+
+        @media (min-width: $tablet) {
+            font-size: 3.5em;
+        }
+    }
+
+    h2 {
+        font-weight: lighter;
+        font-size: 8vw;
+        font-family: $title-font;
+
+        @media (min-width: $tablet) {
+            font-size: 3em;
+        }
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: 6vw;
+        font-family: $title-font;
+
+        @media (min-width: $tablet) {
+            font-size: 1.5em;
+        }
+
+        font-family: $title-font;
+    }
+}
+
+.header {
+    &__base {
+        width: 100%;
+
+        @media (min-width: $tablet) {
+            max-width: 1200px;
+        }
+    }
+}
+
+.navbar {
+    padding: 0px;
+    color: $main-background;
+
+    &__base {
+        background-image: $gradient;
+        color: $main-background;
+    }
+
+    &__toggle-button {
+        color: $main-background;
+        background-color: transparent;
+        float: right;
+
+        &:focus {
+            outline: none !important;
+        }
+    }
+
+    &__toggle-horizontal-line {
+        border-width: 5px;
+        border-color: $main-background;
+        border-radius: 50%;
+    }
+
+    &__toggle-icon {
+        display: block;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    &__content {
+        padding: 0px;
+    }
+
+    &__logo-title {
+        font-weight: lighter;
+        color: $main-background;
+        text-align: center;
+        margin: auto;
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-family: $title-font;
+
+        &:hover {
+            color: $main-background;
+            text-decoration: none;
+        }
+
+        &-desktop {
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+
+
+        &__main {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        &__submain {
+            font-size: 30px;
+        }
+    }
+
+    &__menu-list {
+        padding: 0px;
+        margin-top: 60px;
+
+        &__item {
+            background-color: rgba(255, 255, 255, 0.171);
+            margin: 2px;
+            text-align: center;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        &__link {
+            font-size: 18px;
+            font-weight: lighter;
+            color: $main-background;
+            text-decoration: none;
+            font-family: $title-font;
+
+            &:hover {
+                color: $main-background;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__social-media {
+        list-style-type: none;
+        text-align: center;
+
+        &__item {
+            display: inline-block;
+        }
+
+        &__link {}
+
+        &__image {
+            max-width: 30px;
+            margin: 5px;
+            filter: invert(1);
+        }
+    }
+}
+
+.clock {
+    &__base {
+        background-color: transparent;
+        font-family: $text-font;
+        color: $text-and-borders;
+    }
+
+    &__item {
+        display: inline-block;
+        font-size: 15px;
+        list-style-type: none;
+        padding: 15px;
+        text-transform: uppercase;
+
+        &--jsContainer {
+            display: block;
+            font-size: 25px;
+        }
+    }
+}
+
+.summary {
+    &__base {
+        background-color: transparent;
+    }
+
+    &__container {
+        padding: 5px;
+
+    }
+
+    &__title {
+        font-family: $title-font;
+    }
+
+    &__text {
+        font-family: $text-font;
+        font-size: 18px;
+
+        @media (min-width: $tablet) {
+            font-size: 15px;
+        }
+
+    }
+}
+
+.carousel {
+    &__title {
+        font-family: $title-font;
+    }
+
+    &__block-container {
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    &__control-button {
+        opacity: 1.0;
+
+        @media (min-width: $tablet) {
+            opacity: 1.0;
+        }
+
+        &--next {
+            @media (min-width: $tablet) {
+                right: 100px;
+                top: -100px;
+            }
+        }
+
+        &--previous {
+            @media (min-width: $tablet) {
+                left: 100px;
+                top: -100px;
+            }
+        }
+
+        &__icon {
+            opacity: 1.0;
+
+            @media (min-width: $tablet) {
+                opacity: 1.0;
+            }
+        }
+    }
+
+    &__caption-box {
+        background-color: rgba(0, 0, 0, 0.74);
+        font-family: $text-font;
+    }
+
+    &__button {
+        background-color: rgba(0, 0, 0, 0.525);
+        border-color: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $title-font;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.525);
+            border-color: transparent;
+        }
+    }
+
+}
+
+.calendar {
+    &__base {
+        padding-top: 20px;
+    }
+
+    &__title {
+        font-family: $title-font;
+        color: $text-and-borders;
+    }
+
+    &__card {
+        background-color: $component-background;
+    }
+
+    &__card-title {
+        font-family: $title-font;
+        color: $text-and-borders;
+        font-size: 25px;
+    }
+
+    &__card-body {
+        font-family: $text-font;
+        color: $text-and-borders;
+    }
+}
+
+.calendar-page {
+    &__base {
+        color: $text-and-borders;
+        font-family: $text-font;
+    }
+
+    &__card {
+        background-color: $main-background;
+    }
+
+    &__image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+
+        @media (min-width: $tablet) {
+            height: 200px;
+        }
+    }
+
+    &__title {
+        font-family: $title-font;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__tab-link {
+        color: $text-and-borders;
+        font-weight: bold;
+        background-color: $main-background;
+
+        &:hover {
+            color: $text-and-borders;
+        }
+    }
+
+    &__tab-pane {
+        background-color: $component-background;
+    }
+
+    &__button {
+        background-image: $trailer-button;
+        border-color: transparent;
+        font-size: 20px;
+        color: $text-and-borders;
+
+        &:hover {
+            border-color: transparent;
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
+
+.news-page {
+    &__base {
+        font-family: $text-font;
+        line-height:25px;
+        font-size: 18px;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: $title-font;
+        font-size: 30px;
+    }
+
+    &__accordion-card-header {
+        background-color: lightgray;
+        &:hover {
+            background-color: $component-background;
+        }
+    }
+
+    &__accordion-button {
+        color: $text-and-borders;
+        font-family: $title-font;
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: none;
+            color: $text-and-borders;
+        }
+    }
+
+    &__card-body {
+    }
+
+    &__paragraph {
+        &::first-letter{
+        font-weight: bold;
+        font-size: 20px;
+        }
+    }
+}
+
+.form {
+    &__base {
+        background-color: $main-background;
+        color: $text-and-borders;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        font-family: $title-font;
+        color: $text-and-borders;
+    }
+
+    &__field {
+        display: block;
+    }
+
+    &__label {
+        font-family: $text-font;
+    }
+
+    &__input {
+        border: 2px solid $text-and-borders;
+        font-family: $text-font;
+    }
+
+    &__date {
+        font-family: $text-font;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    &__button {
+        background-color: $button-background;
+        display: block;
+        width: 60%;
+        padding: 10px 20px;
+        margin: 0px auto 20px auto;
+        border: 3px solid $button-background;
+        color: $text-and-borders;
+        font-size: 25px;
+        font-weight: bold;;
+
+        &:hover {
+            background-color: $button-background;
+            border-color: transparent;
+            color: $text-and-borders;
+        }
+    }
+}
+
+.modal {
+    &__button {
+        background-color: $button-background;
+        display: block;
+        width: 60%;
+        padding: 10px 20px;
+        margin: 0px auto 20px auto;
+        border: 3px solid $button-background;
+        font-size: 28px;
+        font-weight: bold;
+        color: $text-and-borders;
+
+        &:hover {
+            background-color: $button-background;
+            border-color: transparent;
+            color: $text-and-borders
+        }
+
+        &:focus {
+            border-color: transparent;
+        }
+    }
+
+    &__dialog-content {
+        border: 2px solid $text-and-borders;
+        background-color: $main-background;
+    }
+
+    &__body {
+        margin: 5px;
+    }
+
+    &__title {
+        font-family: $title-font;
+    }
+
+    &__close-button {
+        background-color: rgb(253, 144, 144);
+        border-color: transparent;
+        font-weight: bold;
+
+        &:hover {
+            background-color: red;
+            border-color: red;
+        }
+    }
+}
+
+.footer {
+    &__base {
+        background-image: $gradient;
+        padding-top: 20px;
+        color: $main-background;
+    }
+
+    &__navigation_base {
+        color: $main-background;
+    }
+
+    &__container {
+        background-color: transparent;
+    }
+
+    &__navigation-list {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        color: $main-background;
+    }
+
+    &__list-item {
+        color: $main-background;
+    }
+
+    &__link {
+        margin: 20px;
+        color: $text-and-borders;
+        font-size: 15px;
+        font-family: $title-font;
+        color: $main-background;
+
+        &:hover {
+            text-decoration: none;
+            color: $main-background;
+        }
+    }
+
+    &__administration {
+        min-width: 100px;
+        filter: invert(1);
+    }
+
+    &__contact {
+        color: $main-background;
+    }
+}
+
+.address {
+    font-size: 14px;
+
+    &__mail {
+        color: $main-background;
+        padding-bottom: 5px;
+        display: block;
+
+        &::before {
+            content: "📧 ";
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $text-and-borders;
+        }
+    }
+
+    &__tel {
+        color: $main-background;
+        display: block;
+
+        &::before {
+            content: "📞 ";
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $main-background;
+        }
+    }
+
+    &__title {
+        font-family: $title-font;
+        color: $main-background;
+    }
+}
