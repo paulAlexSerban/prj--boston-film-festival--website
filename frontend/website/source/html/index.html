@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="css/page/main.page.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -25,7 +25,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
         defer>
     </script>
-    <title>Boston Film Festival 2019</title>
+    <script src="javascript/entry/CountdownTimer.entry.js" defer></script>
+    <title>Boston Film Festival 2023</title>
 </head>
 
 <body class="body__base">
@@ -34,7 +35,7 @@
     <!-- START header -->
     <header class="header__base">
         <!--START navbar-->
-        <nav class="nav-container roundContainer mb-3 navbar__base">
+        <nav class="nav-container mb-3 navbar__base">
             <div class="container navbar__container">
                 <div class="row navbar__row">
                     <div class="col navbar navbar-expand-lg">
@@ -75,20 +76,20 @@
                                     <a class="navbar__social-media__link" href="http://twitter.com/?lang=en"
                                         target="_blank" rel="noopener noreferrer">
                                         <img class="img-fluid socialMediaLogo navbar__social-media__image"
-                                            src="images/twitterLogo.png" alt="twitter link" /></a>
+                                            src="assets/icons/twitterLogo.png" alt="twitter link" /></a>
                                 </li>
                                 <li class="navbar__social-media__item">
                                     <a class="navbar__social-media__link" href="http://www.instagram.com/"
                                         target="_blank" rel="noopener noreferrer">
                                         <img class="img-fluid socialMediaLogo navbar__social-media__image"
-                                            src="images/instagramLogo.png" alt="instagram link" />
+                                            src="assets/icons/instagramLogo.png" alt="instagram link" />
                                     </a>
                                 </li>
                                 <li class="navbar__social-media__item">
                                     <a class="navbar__social-media__link" href="https://www.facebook.com/"
                                         target="_blank" rel="noopener noreferrer">
                                         <img class="img-fluid socialMediaLogo navbar__social-media__image"
-                                            src="images/facebookLogo.png" alt="facebook link" />
+                                            src="assets/icons/facebookLogo.png" alt="facebook link" />
                                     </a>
                                 </li>
                             </ul>
@@ -98,6 +99,22 @@
             </div>
         </nav>
         <!--END navbar-->
+        <!-- START countdown clock -->
+        <div class="jumbotron jumbotron-fluid bgLight my-3 clock__base ">
+            <div class="container text-center clock__quote ">
+                <h2 class="clock__text">"entertainment for all ages"</h2>
+            </div>
+            <div class="container text-center clock__container ">
+                <ul class="clock__numbers">
+                    <li class="clock__item"><span class="clock__item--jsContainer" id="days"></span>days</li>
+                    <li class="clock__item"><span class="clock__item--jsContainer" id="hours"></span>hours</li>
+                    <li class="clock__item"><span class="clock__item--jsContainer" id="minutes"></span>minutes</li>
+                    <li class="clock__item"><span class="clock__item--jsContainer" id="seconds"></span>seconds</li>
+                </ul>
+            </div>
+        </div>
+        <!-- END countdown clock -->
+
     </header>
     <!-- END header -->
 
@@ -136,8 +153,217 @@
     </section>
     <!-- END Summary -->
 
-    <!-- START modal register -->
+    <!-- START news-carousel -->
+    <div class="container-fluid roundContainer bgLight text-center carouselFix carousel__base">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <h2 class="carousel__title">News</h2>
+                </div>
+            </div>
+            <div class="bd-example carousel__block-container">
+                <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#carouselCaptions" data-slide-to="0"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/newsOne-original.webp" alt="From 'Knives Out' to 'Uncut Gems', four must-see movies of
+                  the holiday season" class="d-block m-auto carousel__image" style="width: 50rem;" />
+                            <div class="carousel-caption">
+                                <div class="caption-box d-none d-md-block carousel__caption-box">
+                                    <h3>
+                                        From 'Knives Out' to 'Uncut Gems', four must-see movies of
+                                        the holiday season
+                                    </h3>
+                                    <p>
+                                        Here are four of the favorites that could have been seen
+                                        in the famous festival circuit, all bound for the
+                                        <b>Watch It Outside - Boston Edition 2020.</b>
+                                    </p>
+                                    <a class="btn btn-primary my-2 carousel__button" role="button" href="news.html">Read More >></a>
+                                </div>
+                                <a class="btn btn-primary my-2 d-none d-sm-inline-block d-md-none carousel__button" role="button"
+                                    href="news.html">Read
+                                    More >></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/newsTwo-original.webp" alt="UK box office preview: 'Doctor Sleep' is the latest
+                  challenger to 'Joker'" class="d-block m-auto" style="width: 50rem;" />
+                            <div class="carousel-caption text-center">
+                                <div class="caption-box d-none d-md-block carousel__caption-box">
+                                    <h3>
+                                        UK box office preview: 'Doctor Sleep' is the latest
+                                        challenger to 'Joker'
+                                    </h3>
+                                    <p>
+                                        'Doctor Sleep' becomes the latest title to try and end
+                                        'Joker's' run at the top of the UK box office.
+                                    </p>
+                                    <a class="btn btn-primary my-2 carousel__button" role="button" href="news.html">Read More >></a>
+                                </div>
+                                <a class="btn btn-primary my-2 d-none d-sm-inline-block d-md-none carousel__button" role="button"
+                                    href="news.html">Read
+                                    More >></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/newsThree-original.webp" alt="Deborah S. Esquenazi, Penny Lane"
+                                class="d-block m-auto" style="width: 50rem;" />
+                            <div class="carousel-caption ">
+                                <div class="caption-box d-none d-md-block carousel__caption-box">
+                                    <h3>
+                                        Deborah S. Esquenazi, Penny Lane among the
+                                        <b>Boston Edition 2020</b> of
+                                        <b>Watch It Outside</b> Momentum Fellows
+                                    </h3>
+                                    <p>
+                                        The Momentum Fellowship, now in it's second year. Offers
+                                        'customized' creative and professional support to help
+                                        filmmakers take the next stop in their carers.
+                                    </p>
+                                    <a class="btn btn-primary my-2 carousel__button" role="button" href="news.html">Read More >></a>
+                                </div>
+                                <a class="btn btn-primary my-2 d-none d-sm-inline-block d-md-none carousel__button" role="button"
+                                    href="news.html">Read
+                                    More >></a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/newsFour-original.webp" alt="The Kid Stays in the Picture" class="d-block m-auto"
+                                style="width: 50rem;" />
+                            <div class="carousel-caption  ">
+                                <div class="caption-box d-none d-md-block carousel__caption-box">
+                                    <h3 class="">
+                                        'The Kid Stays in the Picture': The Movie that Salvaged
+                                        Robert Evans' Hollywood Legacy
+                                    </h3>
+                                    <p class="">
+                                        Documentary directors Nanette Burstein and Brett Morgen
+                                        remember the 'Chinatown' producer, who died this week at
+                                        89.
+                                    </p>
+                                    <a class="btn btn-primary my-2 carousel__button" role="button" href="news.html">Read More >></a>
+                                </div>
+                                <a class="btn btn-primary my-2 d-none d-sm-inline-block d-md-none carousel__button" role="button"
+                                    href="news.html">Read
+                                    More >></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#carouselCaptions" class="carousel-control-prev carousel__control-button carousel__control-button--previous" role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon carousel__control-button__icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#carouselCaptions" class="carousel-control-next carousel__control-button carousel__control-button--next" role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END news-carousel -->
 
+    <!-- START calendar -->
+    <div class="container-fluid roundContainer bgLight mb-3 pb-3 calendarFix calendar__base">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h3 class="calendar__title">Calendar</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-md-3 py-2">
+                    <div class="card text-center calendar__card">
+                        <a href="calendar.html" class="btn">
+                            <div class="card-header">
+                                <h3 class="calendar__card-title">5th of August</h3>
+                            </div>
+                        </a>
+                        <div class="card-body calendar__card-body">
+                            <div class="card-text">
+                                18.00h
+                                <a class="calendarLink btn" href="calendar.html">Uncut Gems</a><br />
+                                20.00h
+                                <a class="calendarLink btn" href="calendar.html">Clemency</a><br />
+                                22.00h
+                                <a class="calendarLink btn" href="calendar.html">Chinatown</a><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-md-3 py-2">
+                    <div class="card text-center calendar__card">
+                        <a href="calendar.html" class="btn">
+                            <div class="card-header">
+                                <h3 class="calendar__card-title" >6th of August</h3>
+                            </div>
+                        </a>
+                        <div class="card-body calendar__card-body">
+                            <div class="card-text">
+                                18.00h
+                                <a class="calendarLink btn" href="calendar.html">The Kid Stays in the Picture</a><br />
+                                20.00h
+                                <a class="calendarLink btn" href="calendar.html">Knives Out</a><br />
+                                22.00h
+                                <a class="calendarLink btn" href="calendar.html">Babytooth</a><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-md-3 py-2">
+                    <div class="card text-center calendar__card">
+                        <a href="calendar.html" class="btn">
+                            <div class="card-header">
+                                <h3 class="calendar__card-title" >7th of August</h3>
+                            </div>
+                        </a>
+                        <div class="card-body calendar__card-body">
+                            <div class="card-text">
+                                18.00h
+                                <a class="calendarLink btn" href="calendar.html">Portrait of a Lady on Fire</a><br />
+                                20.00h
+                                <a class="calendarLink btn" href="calendar.html">Joker</a><br />
+                                22.00h
+                                <a class="calendarLink btn" href="calendar.html">The Godfather</a><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-md-3 py-2">
+                    <div class="card text-center calendar__card">
+                        <a href="calendar.html" class="btn">
+                            <div class="card-header">
+                                <h3 class="calendar__card-title">8th of August</h3>
+                            </div>
+                        </a>
+                        <div class="card-body calendar__card-body">
+
+                            <div class="card-text">
+                                18.00
+                                <a class="calendarLink btn" href="calendar.html">Mickey and the Bear</a><br />
+                                20.00
+                                <a class="calendarLink btn" href="calendar.html">Parasite</a><br />
+                                22.00
+                                <a class="calendarLink btn" href="calendar.html">Doctor Sleep</a><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END calendar -->
+
+    <!-- START modal register -->
     <div class="row">
         <div class="col text-center mt-3">
             <button class="btn btn-primary modal__button" type="button" data-toggle="modal"
@@ -181,7 +407,7 @@
                             <div class="row mx-auto">
                                 <div class="col-3">
                                     <label for="fifth" class="form-check-label form__date">
-                                        <input type="checkbox" class="form-check-input" name="fifth" id="fifth" /></br>
+                                        <input type="checkbox" class="form-check-input" name="fifth" id="fifth" /><br/>
                                         5th<br />
                                         August 2020</label>
                                 </div>
@@ -251,18 +477,18 @@
                         <div class="col-md-4">
                             <a href="http://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer">
                                 <img class="img-fluid socialMediaLogo navbar__social-media__image"
-                                    src="images/twitterLogo.png" alt="twitter logo" />
+                                    src="assets/icons/twitterLogo.png" alt="twitter logo" />
                             </a>
                         </div>
                         <div class="col-md-4">
                             <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="images/instagramLogo.png" alt="instagram logo"
+                                <img src="assets/icons/instagramLogo.png" alt="instagram logo"
                                     class="img-fluid socialMediaLogo navbar__social-media__image" />
                             </a>
                         </div>
                         <div class=" col-md-4">
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="images/facebookLogo.png" alt="facebook logo"
+                                <img src="assets/icons/facebookLogo.png" alt="facebook logo"
                                     class="img-fluid socialMediaLogo navbar__social-media__image" />
                             </a>
                         </div>
@@ -271,7 +497,7 @@
                         <div class="col text-center">
                             <a href="https://boston.cbslocal.com/category/news/local/" target="_blank"
                                 rel="noopener noreferrer">
-                                <img src="images/CBSBoston.png" alt="cbsBoston news link"
+                                <img src="assets/icons/CBSBoston.png" alt="cbsBoston news link"
                                     class="img-fluid boston footer__administration" />
                             </a>
                         </div>
@@ -280,7 +506,7 @@
                         <div class="col text-center">
                             <a href="https://www.boston.gov/parks/public-garden" target="_blank"
                                 rel="noopener noreferrer">
-                                <img src="images/cityOfBoston.svg" alt="boston gardens administration link"
+                                <img src="assets/icons/cityOfBoston.svg" alt="boston gardens administration link"
                                     class="img-fluid boston footer__administration" />
                             </a>
                         </div>
@@ -295,6 +521,9 @@
         </footer>
     </div>
     <!-- END footer -->
+
     <!--END body-->
 </body>
+
+
 </html>
