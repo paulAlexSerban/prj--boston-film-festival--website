@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/paulAlexSerban/prj--boston-film-festival--website/compare/v1.2.0...v1.2.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* **assets:** fix asset process script naming and path ([11bb46f](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/11bb46fe6c4ca7a26136c78b6495cb61720e18b7))
+
 # [1.2.0](https://github.com/paulAlexSerban/prj--boston-film-festival--website/compare/v1.1.0...v1.2.0) (2022-10-31)
 
 

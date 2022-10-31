@@ -39,7 +39,7 @@ jobs:
 
       - name: "🏗️  Build Frontend Static Website"
         run: |
-          bash scripts/assets-process.bash
+          bash scripts/assets/process.bash
           bash scripts/frontend/website/build.bash production
 
       - name: "🚚  Package Static Website"
