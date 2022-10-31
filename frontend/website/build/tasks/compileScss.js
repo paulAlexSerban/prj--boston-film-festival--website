@@ -21,10 +21,10 @@ const plugins = [autoprefixer()];
 const nodeEnv = process.env.NODE_ENV || "development";
 
 export const compileScss = () => {
-  console.log(`Executing Compile SCSS on '${paths.src.styles.scssLayers}'`);
+  console.log(`Executing Compile SCSS on '${paths.src.styles.scssPages}'`);
   return new Promise((resolve, reject) => {
     return (
-      src([...paths.src.styles.scssLayers])
+      src([...paths.src.styles.scssPages])
         .pipe(
           plumber({
             errorHandler: onError,

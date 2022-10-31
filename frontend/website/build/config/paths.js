@@ -13,8 +13,7 @@ export const paths = {
     styles: {
       scssDir: `../living-style-guide/source/`,
       scssFiles: [`../living-style-guide/source/**/*.scss`],
-      scssPages: [`../living-style-guide/source/**/*.page.scss`, `../living-style-guide/source/**/*.page.devTools.scss`],
-      scssLayers: [`../living-style-guide/source/**/*.layer.scss`],
+      scssPages: [`../living-style-guide/source/**/*.page.scss`],
     },
     scripts: {
       javaScriptDir: `../js-component-library/source/`,

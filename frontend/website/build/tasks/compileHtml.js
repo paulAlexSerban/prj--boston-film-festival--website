@@ -8,6 +8,7 @@ import prettier from "gulp-prettier";
 import gulpif from "gulp-if";
 import size from "gulp-size";
 
+import rename from "gulp-rename";
 const nodeEnv = process.env.NODE_ENV || "development";
 
 export const compileHtml = () => {
@@ -29,6 +30,11 @@ export const compileHtml = () => {
           title: "compileHtml : ",
           showFiles: true,
           showTotal: true,
+        })
+      )
+      .pipe(
+        rename((file) => {
+          file.dirname = "";
         })
       )
       .pipe(dest([`${paths.dist.dir}`]))
