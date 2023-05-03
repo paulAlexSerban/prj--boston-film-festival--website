@@ -1,10 +1,10 @@
 {
-  "name": "fe--ui-techstack-insights--assets",
+  "name": "assets",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "process": "gulp process --require @babel/register --gulpfile build"
+    "build": "gulp build --require @babel/register --gulpfile build"
   },
   "author": "",
   "license": "ISC",

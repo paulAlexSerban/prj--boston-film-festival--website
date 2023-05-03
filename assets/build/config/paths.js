@@ -3,8 +3,10 @@ export const paths = {
     assets: {
       icons: [`source/icons/*`],
       images: [`source/images/*`],
-      svgs: [`source/svgs/*.svg`]
-    }
+      svgs: [`source/svgs/*.svg`],
+      fonts: [`source/fonts/*`],
+      videos: [`source/videos/*`],
+    },
   },
   dist: {
     dir: `./dist`,
