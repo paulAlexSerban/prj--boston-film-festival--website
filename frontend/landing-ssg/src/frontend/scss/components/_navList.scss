@@ -1,0 +1,30 @@
+.navList {
+    &__base {
+        padding: 0px;
+        justify-content: end;
+        gap: $basesize;
+    }
+
+    &__item {
+        background-color: rgba(255, 255, 255, 0.171);
+        text-align: center;
+        padding: $basesize;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: lighter;
+        color: $main-background;
+        text-decoration: none;
+        font-family: $title-font;
+
+        &:hover {
+            color: $main-background;
+            text-decoration: none;
+        }
+    }
+}

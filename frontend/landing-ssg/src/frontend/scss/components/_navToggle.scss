@@ -1,0 +1,18 @@
+.navToggle {
+    &__base {
+        color: $main-background;
+        background-color: transparent;
+        display: flex;
+        justify-content: end;
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &__icon {
+        display: block;
+        font-size: 25px;
+    }
+}

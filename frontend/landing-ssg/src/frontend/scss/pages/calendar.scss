@@ -1,0 +1,56 @@
+@import '~scssAbstracts';
+
+.calendar-page {
+  &__base {
+      color: $text-and-borders;
+      font-family: $text-font;
+  }
+
+  &__card {
+      background-color: $main-background;
+  }
+
+  &__image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+
+      @media (min-width: $tablet) {
+          height: 200px;
+      }
+  }
+
+  &__title {
+      font-family: $title-font;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+
+  &__tab-link {
+      color: $text-and-borders;
+      font-weight: bold;
+      background-color: $main-background;
+
+      &:hover {
+          color: $text-and-borders;
+      }
+  }
+
+  &__tab-pane {
+      background-color: $component-background;
+  }
+
+  &__button {
+      background-image: $trailer-button;
+      border-color: transparent;
+      font-size: 20px;
+      color: $text-and-borders;
+
+      &:hover {
+          border-color: transparent;
+          color: black;
+          text-decoration: underline;
+      }
+  }
+}
