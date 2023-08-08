@@ -1,0 +1,64 @@
+.carousel {
+  &__title {
+      font-family: $title-font;
+  }
+
+  &__block-container {
+      position: relative;
+  }
+
+  &__image {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+  }
+
+  &__control-button {
+      opacity: 1.0;
+
+      @media (min-width: $tablet) {
+          opacity: 1.0;
+      }
+
+      &--next {
+          @media (min-width: $tablet) {
+              right: 100px;
+              top: -100px;
+          }
+      }
+
+      &--previous {
+          @media (min-width: $tablet) {
+              left: 100px;
+              top: -100px;
+          }
+      }
+
+      &__icon {
+          opacity: 1.0;
+
+          @media (min-width: $tablet) {
+              opacity: 1.0;
+          }
+      }
+  }
+
+  &__caption-box {
+      background-color: rgba(0, 0, 0, 0.74);
+      font-family: $text-font;
+  }
+
+  &__button {
+      background-color: rgba(0, 0, 0, 0.525);
+      border-color: transparent;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: $title-font;
+
+      &:hover {
+          background-color: rgba(0, 0, 0, 0.525);
+          border-color: transparent;
+      }
+  }
+
+}

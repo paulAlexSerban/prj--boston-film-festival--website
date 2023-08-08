@@ -1,0 +1,79 @@
+---
+name: Develop Boston Film Festival Landing SSG Website
+
+on:
+  push:
+    branches-ignore:
+      - release
+      - main
+      - develop
+
+  pull_request:
+    types: [synchronize]
+
+  workflow_dispatch:
+
+jobs:
+  build-frontend:
+    name: Build Frontend Boston Film Festival SSG Portfolio Website
+    runs-on: ubuntu-latest
+    env:
+      ASSETS_ROOT: assets
+      FE_LANDING_PROJECT_ROOT: frontend/landing-ssg
+      NODE_VERSION: 14.20.1
+      SITE_URL: https://paulalexserban.github.io/prj--boston-film-festival--website
+    steps:
+      - name: "📥  Checkout repository"
+        uses: actions/checkout@v3
+
+      - name: "🔍  Verify Changed Files"
+        uses: tj-actions/changed-files@v35
+        id: changed-frontend-landing-website-files
+        with:
+          files: ${{ env.FE_LANDING_PROJECT_ROOT }}/**/*
+
+      - name: "🔄  Cache node_modules"
+        if: ${{ always() }}
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+
+      - name: "🔧  Setup NodeJS ${{ env.NODE_VERSION }}"
+        if: ${{ always() }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: "🔧  Install npm@latest & CI Deps"
+        if: ${{ always() }}
+        run: |
+          npm i -g npm@latest
+          npm ci
+
+      - name: "📦  Install Frontend Landing Website dependencies"
+        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        run: |
+          bash scripts/modulize.bash -e prod -p install -m assets
+          bash scripts/modulize.bash -e prod -p install -m landing-ssg
+
+      - name: "🏗️  Build Frontend Landing Website For GitHub Pages"
+        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        run: |
+          bash scripts/modulize.bash -e gh_pages -p build
+
+      - name: "🚚  Package Frontend Landing Website"
+        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        run: |
+          bash scripts/modulize.bash -e prod -p package -m landing-ssg
+
+      - name: "Configure git"
+        run: |
+          git config --global user.email "paul.alex.serban@gmail.com"
+          git config --global user.name "paulAlexSerban"
+          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: "🚀 Deploy to Test (GitHub Pages)"
+        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        run: npx gh-pages -d package/landing-ssg --branch gh-pages-test -t true

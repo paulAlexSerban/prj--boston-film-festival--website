@@ -1,0 +1,24 @@
+.summary {
+  &__base {
+      background-color: transparent;
+  }
+
+  &__container {
+      padding: 5px;
+
+  }
+
+  &__title {
+      font-family: $title-font;
+  }
+
+  &__text {
+      font-family: $text-font;
+      font-size: 18px;
+
+      @media (min-width: $tablet) {
+          font-size: 15px;
+      }
+
+  }
+}

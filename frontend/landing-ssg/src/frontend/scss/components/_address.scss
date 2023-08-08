@@ -1,0 +1,37 @@
+.address {
+  font-size: 14px;
+
+  &__mail {
+      color: $main-background;
+      padding-bottom: 5px;
+      display: block;
+
+      &::before {
+          content: "📧 ";
+      }
+
+      &:hover {
+          text-decoration: none;
+          color: $text-and-borders;
+      }
+  }
+
+  &__tel {
+      color: $main-background;
+      display: block;
+
+      &::before {
+          content: "📞 ";
+      }
+
+      &:hover {
+          text-decoration: none;
+          color: $main-background;
+      }
+  }
+
+  &__title {
+      font-family: $title-font;
+      color: $main-background;
+  }
+}

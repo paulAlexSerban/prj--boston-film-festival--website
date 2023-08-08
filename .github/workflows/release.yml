@@ -9,6 +9,11 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    env:
+      ASSETS_ROOT: assets
+      FE_LANDING_PROJECT_ROOT: frontend/landing-ssg
+      NODE_VERSION: 14.20.1
+      SITE_URL: https://paulalexserban.github.io/prj--natours-tours-agency
     steps:
       - name: "📥 checkout repository"
         uses: actions/checkout@v3
@@ -24,10 +29,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: "🔧 Setup NodeJS 14.19.1"
+      - name: "🔧 Setup NodeJS ${{ env.NODE_VERSION }}"
         uses: actions/setup-node@v1
         with:
-          node-version: 14.19.1
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: "🔧 Install npm@latest"
         run: npm i -g npm@latest
