@@ -1,0 +1,485 @@
+{{#> ../core/templates/generic }}
+    <body data-bs-theme="light">
+        <link rel="stylesheet" href="./styles/index.css">
+        <script src="./scripts/index.js" async defer></script>
+
+
+    <!-- START Calendar -->
+    <div class="container-fluid roundContainer bgLight calendar-page__base">
+        <div class="container">
+            <h2 class="calendar-page__title">Check the schedule by day</h2>
+            <ul class="nav nav-tabs">
+                <li class="nav-item navLinkFix">
+                    <a href="#day1" class="nav-link active calendar-page__tab-link" data-toggle="tab">5th of August</a>
+                </li>
+                <li class="nav-item navLinkFix">
+                    <a href="#day2" class="nav-link calendar-page__tab-link" data-toggle="tab">6th of August</a>
+                </li>
+                <li class="nav-item navLinkFix">
+                    <a href="#day3" class="nav-link calendar-page__tab-link" data-toggle="tab">7th of August</a>
+                </li>
+                <li class="nav-item navLinkFix">
+                    <a href="#day4" class="nav-link calendar-page__tab-link" data-toggle="tab">8th of August</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="container tab-pane calendar-page__tab-pane active" id="day1">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/uncutGems-original.webp" alt="uncut gems - Adam Sandler as Howard" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Uncut Gems</h4>
+                                    <p class="card-text">A charismatic New York City jeweler always on the lookout for
+                                        the next big score, makes a series of high-stakes bets that could lead to the
+                                        windfall of a lifetime. Howard must perform a precarious high-wire act,
+                                        balancing business, family, and encroaching adversaries on all sides, in his
+                                        relentless pursuit of the ultimate win.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayOneFilmOne">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/clemency_still-original.webp" alt="photo of Bernadine Williams" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Clemency</h4>
+                                    <p class="card-text">Years of carrying out death row executions have taken a toll on
+                                        prison warden Bernadine Williams. As she prepares to execute another inmate,
+                                        Bernadine must confront the psychological and emotional demons her job creates,
+                                        ultimately connecting her to the man she is sanctioned to kill.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayOneFilmTwo">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/Chinatown-original.webp" alt="photo of Detective Jake" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Chinatown</h4>
+                                    <p class="card-text">A private detective hired to expose an adulterer finds himself
+                                        caught up in a web of deceit, corruption, and murder.
+                                        Mrs Mulwray hires Detective Jake, who specializes in matrimonial cases, to spy
+                                        on her husband, the builder of the city's water system. He finds himself in a
+                                        web of deceit when Mr Mulwray dies.
+                                    </p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayOneFilmThree">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container tab-pane  calendar-page__tab-pane fade" id="day2">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/kidStaysInThePictuire-original.webp" alt="The Kid Stays in the Picture poster" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">The Kid Stays in the Picture</h4>
+                                    <p class="card-text">Traces the meteoric rise, fall, and rise again of legendary
+                                        Hollywood producer Robert Evans. Adapted from Mr. Evans's tell-all
+                                        autobiography, the movie takes the audience on an intimate journey into the mind
+                                        of this Hollywood legend. "The Kid Stays in the Picture" shares gripping
+                                        anecdotes about Evans's unusual friendships and follows the thread of his
+                                        tumultuous love life.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayTwoFilmOne">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/knives-out-h-original.webp" alt="knives out image" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Knives Out</h4>
+                                    <p class="card-text">A detective and a trooper travel to a lush estate to interview
+                                        the quirky relatives of a patriarch who died during his 85th birthday
+                                        celebration.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayTwoFilmTwo">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/babyTeeth-original.webp" alt="babyteeth image" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Babyteeth</h4>
+                                    <p class="card-text">Babyteeth is a 2019 Australian drama film directed by Shannon
+                                        Murphy. The bittersweet comedy, adapted by Rita Kalnejais from her stage play of
+                                        the same name, follows a couple who discover their seriously ill teenage
+                                        daughter has fallen in love with a small time drug dealer.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayTwoFilmThree">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container tab-pane calendar-page__tab-pane fade" id="day3">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img class="card-img-top calendar-page__image" src="./public/images/portraitOfA...-original.webp" alt="Porttrait of a Lady on fire poster">
+                                <div class="card-body">
+                                    <h4 class="card-title">Portrait of a Lady on Fire</h4>
+                                    <p class="card-text">In 1770 the young daughter of a French countess develops a
+                                        mutual attraction to the female artist commissioned to paint her wedding
+                                        portrait.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayThreeFilmOne">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/joker-movie-fb-original.webp" alt="the joker porttrait" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Joker</h4>
+                                    <p class="card-text">In Gotham City, mentally-troubled comedian Arthur Fleck is
+                                        disregarded and mistreated by society. He then embarks on a downward spiral of
+                                        revolution and bloody crime. This path brings him face-to-face with his
+                                        alter-ego: "The Joker".</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayThreeFilmTwo">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/theGodfather-original.webp" alt="photo of Don Vito Corleone taking advice" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">The Godfather</h4>
+                                    <p class="card-text">Don Vito Corleone, head of a mafia family, decides to handover
+                                        his empire to his youngest son Michael. However, his decision unintentionally
+                                        puts the lives of his loved ones in grave danger.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayThreeFilmThree">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container tab-pane calendar-page__tab-pane fade" id="day4">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/mickey_and_the_bear-original.webp" alt="Mickey and the Bear poster" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Mickery and the Bear</h4>
+                                    <p class="card-text">A Montana teenager navigates a loving but volatile relationship
+                                        with her single, veteran father. In a desperate search for independence and her
+                                        own identity, she risks family and heartbreak.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayFourFilmOne">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/parasite-original.webp" alt="parasite poster" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Parasite</h4>
+                                    <p class="card-text">Greed and class discrimination threaten the newly formed
+                                        symbiotic relationship between the wealthy Park family and the destitute Kim
+                                        clan.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayFourFilmTwo">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4 py-2">
+                            <div class="card calendar-page__card">
+                                <img src="./public/images/drSleep-original.webp" alt="Dcotor Sleep poster" class="card-img-top calendar-page__image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Doctor Sleep</h4>
+                                    <p class="card-text">Years following the events of "The Shining," a now-adult Dan
+                                        Torrance meets a young girl with similar powers as he tries to protect her from
+                                        a cult known as The True Knot who prey on children with powers to remain
+                                        immortal.</p>
+                                    <button type="button" class="btn btn-primary calendar-page__button" data-toggle="modal"
+                                        data-target="#dayFourFilmThree">Watch Trailer >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Film Trailers Modal Content-->
+    <!--Day 1 Film 1-->
+    <div class="modal fade" id="dayOneFilmOne" tabindex="-1" role="dialog" aria-labelledby="dayOneFilmOneLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayOneFilmOneLabel">Uncut Gems</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/vTfJp2Ts9X8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 1 Film 2-->
+    <div class="modal fade" id="dayOneFilmTwo" tabindex="-1" role="dialog" aria-labelledby="dayOneFilmTwoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayOneFilmTwoLabel">Clemency</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="450" height="300" src="https://www.youtube.com/embed/HzUhz2XkFfE" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 1 Film 3-->
+    <div class="modal fade" id="dayOneFilmThree" tabindex="-1" role="dialog" aria-labelledby="dayOneFilmThreeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center" id="dayOneFilmThreeLabel">Chinatown</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="450" height="300" src="https://www.youtube.com/embed/p39LFdGI-YA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 2 Film 1-->
+    <div class="modal fade" id="dayTwoFilmOne" tabindex="-1" role="dialog" aria-labelledby="dayTwoFilmOneLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayTwoFilmOneLabel">The Kid Stays in the Picture</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/uLatU-2Hu_E" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 2 Film 2-->
+    <div class="modal fade" id="dayTwoFilmTwo" tabindex="-1" role="dialog" aria-labelledby="dayTwoFilmTwoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayTwoFilmTwoLabel">Film Title</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/xi-1NchUqMA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 2 Film 3-->
+    <div class="modal fade" id="dayTwoFilmThree" tabindex="-1" role="dialog" aria-labelledby="dayTwoFilmThreeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayTwoFilmThreeLabel">Babyteeth</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/PLNXHJB5Mto" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 3 Film 1-->
+    <div class="modal fade" id="dayThreeFilmOne" tabindex="-1" role="dialog" aria-labelledby="dayThreeFilmOneLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayThreeFilmOneLabel">Film Title</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/6sS4_CPqmY0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 3 Film 2-->
+    <div class="modal fade" id="dayThreeFilmTwo" tabindex="-1" role="dialog" aria-labelledby="dayThreeFilmTwoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayThreeFilmTwoLabel">Joker</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 3 Film 3-->
+    <div class="modal fade" id="dayThreeFilmThree" tabindex="-1" role="dialog" aria-labelledby="dayThreeFilmThreeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayThreeFilmThreeLabel">The Godfather</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/sY1S34973zA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 4 Film 1-->
+    <div class="modal fade" id="dayFourFilmOne" tabindex="-1" role="dialog" aria-labelledby="dayFourFilmOneLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayFourFilmOneLabel">Mickey and the Bear</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/kJ6fDHro3Rk" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 4 Film 2-->
+    <div class="modal fade" id="dayFourFilmTwo" tabindex="-1" role="dialog" aria-labelledby="dayFourFilmTwoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayFourFilmTwoLabel">Parasite</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/isOGD_7hNIY" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Day 4 Film 3-->
+    <div class="modal fade" id="dayFourFilmThree" tabindex="-1" role="dialog" aria-labelledby="dayFourFilmThreeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="dayFourFilmThreeLabel">Doctor Sleep</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/BOzFZxB-8cw" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__close-button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END Calendar -->
+
+        {{> ../core/fragments/components/modal/index}}
+
+
+    </body>
+{{/ ../core/templates/generic}}

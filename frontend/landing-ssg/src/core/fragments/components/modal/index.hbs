@@ -1,0 +1,88 @@
+<!-- Button trigger modal -->
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col text-center mt-3 modal__button-container">
+      <button type="button" class="btn btn-primary modal__button" data-bs-toggle="modal"
+        data-bs-target="#registrationModal">
+        Get a ticket
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade row" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal__base col">
+      <div class="modal-content modal__dialog-content">
+        <div class="modal-header">
+          <h3 class="modal-title modal__title">Register form</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal__body">
+          <form action="#">
+            <div class="form-group">
+              <label class="form__label" for="email">Email address:</label>
+              <input type="email" class="form-control form__input" id="email" placeholder="Enter email please" />
+            </div>
+            <div class="form-group">
+              <label class="form__label" for="name">Username</label>
+              <input type="text" class="form-control form__input" id="name" placeholder="Enter your full name please" />
+            </div>
+            <div class="form-group">
+              <label class="form__label" for="numberOfTickets">Number of tickets</label>
+              <input type="number" class="form-control form__input" id="numberOfTickets"
+                placeholder="How many tickets would you like?" />
+            </div>
+            <div class="form-group">
+              <label class="form__label" for="comment">Comment:<br /></label>
+              <textarea name="comment" id="comment" class="form-control form__input" rows="10"
+                placeholder="Please type here - requests, questions or comments"></textarea>
+            </div>
+            <div class="form-group form-check-inline text-center form__date-group">
+              <div class="row mx-auto">
+                <div class="col-3">
+                  <label for="fifth" class="form-check-label form__date">
+                    <input type="checkbox" class="form-check-input" name="fifth" id="fifth" /><br />
+                    5th<br />
+                    August 2023</label>
+                </div>
+                <div class="col-3">
+                  <label for="sixth" class="form-check-label form__date">
+                    <input type="checkbox" class="form-check-input" name="sixth" id="sixth" /><br />
+                    6th<br />
+                    August 2023</label>
+                </div>
+                <div class="col-3">
+                  <label for="seventh" class="form-check-label form__date">
+                    <input type="checkbox" class="form-check-input" name="seventh" id="seventh" /><br />
+                    7th<br />
+                    August 2023</label>
+                </div>
+                <div class="col-3">
+                  <label for="eighth" class="form-check-label form__date">
+                    <input type="checkbox" class="form-check-input" name="eighth" id="eighth" /><br />
+                    8th<br />August 2023</label>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid mb-3">
+              <button type="submit" class="btn btn-primary mb-3 form__button">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary modal__close-button" type="button" data-dismiss="modal">
+            Close
+          </button>
+          <button class="btn btn-primary modal__close-button" type="button" data-dismiss="modal">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

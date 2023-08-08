@@ -1,0 +1,47 @@
+.footer {
+  &__base {
+      background-image: $gradient;
+      padding-top: 20px;
+      color: $main-background;
+  }
+
+  &__navigation_base {
+      color: $main-background;
+  }
+
+  &__container {
+      background-color: transparent;
+  }
+
+  &__navigation-list {
+      margin-top: 10%;
+      margin-bottom: 10%;
+      color: $main-background;
+  }
+
+  &__list-item {
+      color: $main-background;
+  }
+
+  &__link {
+      margin: 20px;
+      color: $text-and-borders;
+      font-size: 15px;
+      font-family: $title-font;
+      color: $main-background;
+
+      &:hover {
+          text-decoration: none;
+          color: $main-background;
+      }
+  }
+
+  &__administration {
+      min-width: 100px;
+      filter: invert(1);
+  }
+
+  &__contact {
+      color: $main-background;
+  }
+}

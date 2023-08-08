@@ -1,0 +1,29 @@
+.navBar {
+    &__base {
+        background-image: $gradient;
+        color: $main-background;
+        padding-inline: 40px;
+        padding-block: 20px;
+    }
+
+    &__content {
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    &__container {
+        height: 100%;
+    }
+
+    &__list-container {
+        > * + * {
+            margin-top: $basesize * 2;
+        }
+    }
+
+    &__social-media-image {
+        width: 30px;
+        height: 30px;
+        margin: 0px 10px;
+    }
+}

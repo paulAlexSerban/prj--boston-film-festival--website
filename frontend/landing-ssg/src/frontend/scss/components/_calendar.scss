@@ -1,0 +1,25 @@
+.calendar {
+  &__base {
+      padding-top: 20px;
+  }
+
+  &__title {
+      font-family: $title-font;
+      color: $text-and-borders;
+  }
+
+  &__card {
+      background-color: $component-background;
+  }
+
+  &__card-title {
+      font-family: $title-font;
+      color: $text-and-borders;
+      font-size: 25px;
+  }
+
+  &__card-body {
+      font-family: $text-font;
+      color: $text-and-borders;
+  }
+}

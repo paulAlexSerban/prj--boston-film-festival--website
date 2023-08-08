@@ -1,0 +1,77 @@
+.carousel {
+    &__title {
+        font-family: $title-font;
+    }
+
+    &__block-container {
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    &__indicators {
+        bottom: 40px;
+    }
+
+    &__control-button {
+        opacity: 1;
+
+        @media (min-width: $tablet) {
+            opacity: 1;
+        }
+
+        &--next {
+            @media (min-width: $tablet) {
+                right: 100px;
+                top: -100px;
+            }
+        }
+
+        &--previous {
+            @media (min-width: $tablet) {
+                left: 100px;
+                top: -100px;
+            }
+        }
+
+        &__icon {
+            opacity: 1;
+
+            @media (min-width: $tablet) {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__caption-box {
+        background-color: rgba(0, 0, 0, 0.74);
+        font-family: $text-font;
+    }
+
+    &__button {
+        background-color: rgba(0, 0, 0, 0.525);
+        border-color: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $title-font;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (min-width: $tablet) {
+            position: relative;
+            left: unset;
+            transform: unset;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.525);
+            border-color: transparent;
+        }
+    }
+}

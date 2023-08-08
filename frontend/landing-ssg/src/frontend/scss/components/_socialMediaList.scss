@@ -1,0 +1,21 @@
+.socialMediaList {
+    &__list {
+        list-style-type: none;
+        text-align: center;
+        display: flex;
+        gap: $basesize;
+        justify-content: end;
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+    }
+
+    &__image {
+        max-width: 20px;
+        filter: invert(1);
+    }
+}
