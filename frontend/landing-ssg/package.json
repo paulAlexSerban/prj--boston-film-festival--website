@@ -5,7 +5,8 @@
   "scripts": {
     "watch": "export NODE_ENV=development && webpack serve --config webpack.dev.js --hot --progress",
     "dev": "export NODE_ENV=development && webpack --config webpack.dev.js",
-    "build": "export NODE_ENV=production && webpack --config webpack.prod.js"
+    "build": "export NODE_ENV=production && webpack --config webpack.prod.js",
+    "start": "npx serve@latest dist"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",

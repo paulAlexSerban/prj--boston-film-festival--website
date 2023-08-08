@@ -1,0 +1,65 @@
+<div class="container-fluid roundContainer bgLight text-center carouselFix carousel__base">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="carousel__title">News</h2>
+      </div>
+    </div>
+    <div class="bd-example carousel__block-container">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators carousel__indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          {{> _carousel-item active=true 
+            imageSrc="./public/images/newsOne-original.webp" 
+            imageAlt="From 'Knives Out' to 'Uncut Gems', four must-see movies of the holiday season"
+            itemHeading="From 'Knives Out' to 'Uncut Gems', four must-see movies of the holiday season"
+            itemDescription="Here are four of the favorites that could have been seen in the famous festival circuit, all bound for the Watch It Outside - Boston Edition 2023."}}
+
+          {{> _carousel-item
+            imageSrc="./public/images/newsTwo-original.webp" 
+            imageAlt="UK box office preview: 'Doctor Sleep' is the latest challenger to 'Joker'"
+            itemHeading="UK box office preview: 'Doctor Sleep' is the latest challenger to 'Joker'"
+            itemDescription="'Doctor Sleep' becomes the latest title to try and end 'Joker's' run at the top of the UK box office."}}
+
+          {{> _carousel-item 
+            imageSrc="./public/images/newsThree-original.webp" 
+            imageAlt="Deborah S. Esquenazi, Penny Lane"
+            itemHeading="Deborah S. Esquenazi, Penny Lane among the Boston Edition 2023 of
+ Watch It Outside Momentum Fellows"
+            itemDescription="The Momentum Fellowship, now in it's second year. Offers 'customized' creative and professional support to help filmmakers take the next stop in their carers."}}
+
+          {{> _carousel-item 
+            imageSrc="./public/images/newsFour-original.webp" 
+            imageAlt="The Kid Stays in the Picture"
+            itemHeading="'The Kid Stays in the Picture': The Movie that Salvaged Robert Evans' Hollywood Legacy"
+            itemDescription="Documentary directors Nanette Burstein and Brett Morgen remember the 'Chinatown' producer, who died this week at 89."}}
+
+        </div>
+          <a class="btn btn-primary my-2 d-none d-sm-inline-block d-md-none carousel__button" role="button"
+    href="news.html">Read
+    More >></a>
+        <button class="carousel-control-prev carousel__control-button carousel__control-button--previous" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon carousel__control-button__icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next carousel__control-button carousel__control-button--next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon carousel__control-button__icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

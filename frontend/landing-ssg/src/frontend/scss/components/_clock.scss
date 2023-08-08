@@ -6,7 +6,9 @@
     }
 
     &__item {
-        display: inline-block;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 8px;
         font-size: 15px;
         list-style-type: none;
         padding: 15px;
