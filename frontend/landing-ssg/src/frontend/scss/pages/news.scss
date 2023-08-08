@@ -1,0 +1,45 @@
+@import '~scssAbstracts';
+
+.news-page {
+  &__base {
+      font-family: $text-font;
+      line-height:25px;
+      font-size: 18px;
+  }
+
+  &__title {
+      text-align: center;
+      font-family: $title-font;
+      font-size: 30px;
+  }
+
+  &__accordion-card-header {
+      background-color: lightgray;
+      &:hover {
+          background-color: $component-background;
+      }
+  }
+
+  &__accordion-button {
+      color: $text-and-borders;
+      font-family: $title-font;
+      font-size: 20px;
+      text-align: left;
+      font-weight: bold;
+
+      &:hover {
+          text-decoration: none;
+          color: $text-and-borders;
+      }
+  }
+
+  &__card-body {
+  }
+
+  &__paragraph {
+      &::first-letter{
+      font-weight: bold;
+      font-size: 20px;
+      }
+  }
+}

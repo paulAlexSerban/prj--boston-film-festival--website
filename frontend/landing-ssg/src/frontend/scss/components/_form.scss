@@ -1,0 +1,50 @@
+.form {
+  &__base {
+      background-color: $main-background;
+      color: $text-and-borders;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  &__title {
+      font-family: $title-font;
+      color: $text-and-borders;
+  }
+
+  &__field {
+      display: block;
+  }
+
+  &__label {
+      font-family: $text-font;
+  }
+
+  &__input {
+      border: 2px solid $text-and-borders;
+      font-family: $text-font;
+  }
+
+  &__date {
+      font-family: $text-font;
+      margin: 10px;
+      padding: 20px;
+  }
+
+  &__button {
+      background-color: $button-background;
+      display: block;
+      width: 60%;
+      padding: 10px 20px;
+      margin: 0px auto 20px auto;
+      border: 3px solid $button-background;
+      color: $text-and-borders;
+      font-size: 25px;
+      font-weight: bold;;
+
+      &:hover {
+          background-color: $button-background;
+          border-color: transparent;
+          color: $text-and-borders;
+      }
+  }
+}

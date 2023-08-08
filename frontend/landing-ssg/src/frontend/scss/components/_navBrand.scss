@@ -1,0 +1,44 @@
+.navBrand {
+    &__base {
+      align-self: flex-end;
+    }
+    &__link {
+        text-decoration: none;
+        color: $main-background;
+        display: flex;
+        flex-direction: column;
+        font-family: $title-font;
+
+        > * + * {
+            margin-top: calc($basesize / 2);
+        }
+
+        &:hover {
+            color: $main-background;
+            text-decoration: none;
+        }
+    }
+
+    &__main {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: bold;
+
+        @media (min-width: $tablet) {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+
+    &__submain {
+      font-size: 16px;
+      line-height: 20px;
+      width: 50%;
+      display: block;
+
+      @media (min-width: $tablet) {
+          font-size: 18px;
+          line-height: 22px;
+      }
+  }
+}

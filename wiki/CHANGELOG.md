@@ -1,3 +1,20 @@
+# [1.3.0](https://github.com/paulAlexSerban/prj--boston-film-festival--website/compare/v1.2.1...v1.3.0) (2023-08-08)
+
+
+### Bug Fixes
+
+* **build issues:** updated to node 16 ([9b2b47c](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/9b2b47c02054bea45fd6eb141ee1aa72df1807f0))
+* gh pages typo ([9df0278](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/9df02783da8859dd21360a6beb4a4fe0934f69f9))
+* **gh pages:** gh pages issues ([2d0f4c8](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/2d0f4c805c90848dbeee01405e1a7e9a467a6dd7))
+* typo ([60a2230](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/60a22306720909ee33d2b0996981d62195621bcf))
+
+
+### Features
+
+* git issues ([f2baf8e](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/f2baf8e9edafb434f21b57e12f5e57c7cb415adc))
+* **refactor:** initial refactoring before publishing to portfolio ([56d80bb](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/56d80bb951f16257a16518b1242a53bf202b1f38))
+* **refactring:** wip refactoring - header and navbar done ([7ab5519](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/7ab5519c7706d13fc489847b484a708cf655a828))
+
 ## [1.2.1](https://github.com/paulAlexSerban/prj--boston-film-festival--website/compare/v1.2.0...v1.2.1) (2022-10-31)
 
 

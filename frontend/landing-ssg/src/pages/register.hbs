@@ -1,0 +1,62 @@
+{{#> ../core/templates/generic }}
+
+    <body data-bs-theme="light">
+        <link rel="stylesheet" href="./styles/index.css">
+        <script src="./scripts/index.js" async defer></script>
+
+        <!-- START registration form -->
+
+        <section class="container-fluid bgLight my-3 form__base">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center form__title">Register and get in contact</h2>
+                </div>
+            </div>
+            <form action="#">
+                <div class="form-group">
+                    <label class="form__label" for="email">Email address:</label>
+                    <input type="email" class="form-control form__input" id="email" placeholder="Enter email please">
+                </div>
+                <div class="form-group">
+                    <label class="form__label" for="name">Username</label>
+                    <input type="text" class="form-control form__input" id="name"
+                        placeholder="Enter your full name please">
+                </div>
+                <div class="form-group">
+                    <label class="form__label" for="numberOfTickets">Number of tickets</label>
+                    <input type="number" class="form-control form__input" id="numberOfTickets"
+                        placeholder="Number of tickets">
+                </div>
+                <div class="form-group">
+                    <label class="form__label" for="comment">Comment:</label><br>
+                    <textarea name="comment" id="comment" rows="10" class="form-control form__input"
+                        placeholder="Please type here - requests, questions or comments"></textarea>
+                </div>
+                <div class="form-group form-check form__date-group">
+                    <label for="fifth" class="form-check-label form__date">
+                        <input type="checkbox" class="form-check-input" name="fifth" id="fifth">5th<br> August
+                        2023
+                    </label>
+                    <label for="sixth" class="form-check-label form__date">
+                        <input type="checkbox" class="form-check-input" name="sixth" id="sixth">6th<br> August
+                        2023
+                    </label>
+                    <label for="seventh" class="form-check-label form__date">
+                        <input type="checkbox" class="form-check-input" name="seventh" id="seventh">7th<br>
+                        August 2023
+                    </label>
+                    <label for="eighth" class="form-check-label form__date">
+                        <input type="checkbox" class="form-check-input" name="eighth" id="eighth">8th<br> August
+                        2023
+                    </label>
+                </div>
+                <div class="container-fluid mb-3 center text-center">
+                    <button type="submit" class="btn btn-primary mb-3 form__button">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- END registration form -->
+
+    </body>
+    {{/ ../core/templates/generic}}
