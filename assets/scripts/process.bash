@@ -4,5 +4,4 @@ cd "$(dirname "$0")" || exit
 
 source ../config.env
 
-rm -rfv ../node_modules
-npm --prefix .. install
+npm --prefix .. run process

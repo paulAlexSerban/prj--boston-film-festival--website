@@ -20,7 +20,7 @@ jobs:
     env:
       ASSETS_ROOT: assets
       FE_LANDING_PROJECT_ROOT: frontend/landing-ssg
-      NODE_VERSION: 14.20.1
+      NODE_VERSION: 16.19.0
       SITE_URL: https://paulalexserban.github.io/prj--boston-film-festival--website
     steps:
       - name: "📥 checkout repository"
@@ -61,6 +61,7 @@ jobs:
       - name: "🏗️  Build Frontend Landing Website For GitHub Pages"
         # if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
+          bash scripts/modulize.bash -e gh_pages -p process
           bash scripts/modulize.bash -e gh_pages -p build
 
       - name: "🚚  Package Frontend Landing Website"
@@ -69,7 +70,7 @@ jobs:
           bash scripts/modulize.bash -e prod -p package -m landing-ssg
 
       - name: "🚀 Deploy to GitHub Pages"
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: package/landing-ssg

@@ -6,6 +6,7 @@ import { onError } from "../utils/onError";
 
 export const processIcons = () => {
   return new Promise((resolve, reject) => {
+    console.log("Starting processIcons task...");
     return src(paths.src.assets.icons)
       .pipe(
         plumber({
@@ -20,7 +21,13 @@ export const processIcons = () => {
         })
       )
       .pipe(dest(`${paths.dist.dir}/icons`))
-      .on("error", reject)
-      .on("end", resolve);
+      .on("error", (err) => {
+        console.error(`Error in processIcons task: ${err}`);
+        reject(err);
+      })
+      .on("end", () => {
+        console.log("Completed processIcons task.");
+        resolve();
+      });
   });
 };

@@ -21,10 +21,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: "🔧 Setup NodeJS 14.20.1"
+      - name: "🔧 Setup NodeJS 16.19.0"
         uses: actions/setup-node@v1
         with:
-          node-version: 14.20.1
+          node-version: 16.19.0
 
       - name: "🔧 Install npm@latest"
         run: npm i -g npm@latest

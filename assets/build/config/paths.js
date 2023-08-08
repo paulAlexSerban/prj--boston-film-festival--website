@@ -4,11 +4,13 @@ export const paths = {
       icons: [`source/icons/*`],
       images: [`source/images/*`],
       svgs: [`source/svgs/*.svg`],
-      fonts: [`source/fonts/*`],
       videos: [`source/videos/*`],
+      audio: [`source/audio/*`],
+      gifs: [`source/gifs/*`],
     },
   },
   dist: {
     dir: `./dist`,
+    images: `dist/images`,
   },
 };

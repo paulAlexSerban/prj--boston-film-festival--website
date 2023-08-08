@@ -12,7 +12,7 @@ jobs:
     env:
       ASSETS_ROOT: assets
       FE_LANDING_PROJECT_ROOT: frontend/landing-ssg
-      NODE_VERSION: 14.20.1
+      NODE_VERSION: 16.19.0
       SITE_URL: https://paulalexserban.github.io/prj--natours-tours-agency
     steps:
       - name: "📥 checkout repository"

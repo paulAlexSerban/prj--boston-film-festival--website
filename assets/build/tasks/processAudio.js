@@ -14,11 +14,11 @@ const logger = createLogger({
   ],
 });
 
-export const processVideos = () => {
-  logger.info("Starting video processing");
+export const processAudio = () => {
+  logger.info("Starting audio processing");
 
   return new Promise((resolve, reject) => {
-    return src(paths.src.assets.videos)
+    return src(paths.src.assets.audio)
       .pipe(
         plumber({
           errorHandler: onError,
@@ -26,18 +26,18 @@ export const processVideos = () => {
       )
       .pipe(
         size({
-          title: "processVideos : ",
+          title: "processAudio : ",
           showFiles: true,
           showTotal: true,
         })
       )
-      .pipe(dest(`${paths.dist.dir}/videos`))
+      .pipe(dest(`${paths.dist.dir}/audio`))
       .on("error", (err) => {
-        logger.error(`Error processing videos: ${err}`);
+        logger.error(`Error processing audio: ${err}`);
         reject(err);
       })
       .on("end", () => {
-        logger.info("Finished video processing");
+        logger.info("Finished audio processing");
         resolve();
       });
   });
