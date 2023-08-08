@@ -3,7 +3,7 @@ name: Develop Boston Film Festival Landing SSG Website
 
 on:
   push:
-    branches-ignore:
+    branches:
       - release
       - main
       - develop
