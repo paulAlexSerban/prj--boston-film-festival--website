@@ -74,6 +74,8 @@ jobs:
           git config --global user.name "paulAlexSerban"
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: "🚀 Deploy to Test (GitHub Pages)"
-        # if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
-        run: npx gh-pages -d package/landing-ssg --branch gh-pages-test -t true
+      - name: "🚀 Deploy to GitHub Pages"
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: package/distpackage/landing-ssg
