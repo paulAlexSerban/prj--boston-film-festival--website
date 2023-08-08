@@ -23,8 +23,17 @@ jobs:
       NODE_VERSION: 14.20.1
       SITE_URL: https://paulalexserban.github.io/prj--boston-film-festival--website
     steps:
-      - name: "📥  Checkout repository"
+      - name: "📥 checkout repository"
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: "🔄  Cache node_modules"
+        uses: actions/cache@v3
+        with:
+            path: ~/.npm
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: ${{ runner.os }}-node-
 
       - name: "🔍  Verify Changed Files"
         uses: tj-actions/changed-files@v35
@@ -32,19 +41,10 @@ jobs:
         with:
           files: ${{ env.FE_LANDING_PROJECT_ROOT }}/**/*
 
-      - name: "🔄  Cache node_modules"
-        if: ${{ always() }}
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
-
       - name: "🔧  Setup NodeJS ${{ env.NODE_VERSION }}"
-        if: ${{ always() }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
+            node-version: ${{ env.NODE_VERSION }}
 
       - name: "🔧  Install npm@latest & CI Deps"
         if: ${{ always() }}
