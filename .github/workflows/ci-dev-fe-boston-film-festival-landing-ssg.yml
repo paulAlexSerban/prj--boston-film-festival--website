@@ -53,18 +53,18 @@ jobs:
           npm ci
 
       - name: "📦  Install Frontend Landing Website dependencies"
-        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        # if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
           bash scripts/modulize.bash -e prod -p install -m assets
           bash scripts/modulize.bash -e prod -p install -m landing-ssg
 
       - name: "🏗️  Build Frontend Landing Website For GitHub Pages"
-        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        # if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
           bash scripts/modulize.bash -e gh_pages -p build
 
       - name: "🚚  Package Frontend Landing Website"
-        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        # if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: |
           bash scripts/modulize.bash -e prod -p package -m landing-ssg
 
@@ -75,5 +75,5 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: "🚀 Deploy to Test (GitHub Pages)"
-        if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
+        # if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}
         run: npx gh-pages -d package/landing-ssg --branch gh-pages-test -t true
