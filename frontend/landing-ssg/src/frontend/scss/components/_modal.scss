@@ -28,16 +28,44 @@
 
   &__body {
       margin: 5px;
+
+      .form-group {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .form-control {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+
+      .form__label {
+        margin-top: 10px;
+      }
+
+      .form__button {
+        font-size: 16px;
+      }
+
+      form {
+        >* + * {
+          margin-top: 10px;
+        }
+      }
   }
 
   &__title {
       font-family: $title-font;
+      font-size: 32px;
+        line-height: 36px;
   }
 
   &__close-button {
       background-color: rgb(253, 144, 144);
       border-color: transparent;
       font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
 
       &:hover {
           background-color: red;

@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/paulAlexSerban/prj--boston-film-festival--website/compare/v1.3.0...v1.3.1) (2023-09-12)
+
+
+### Bug Fixes
+
+* ci issues ([a8131dc](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/a8131dc1158aa7402565d9953f6bbfa4cee6b8c1))
+* **styles:** fixes ([599383a](https://github.com/paulAlexSerban/prj--boston-film-festival--website/commit/599383a523acd46ed08eec273bd84c6cd3dffae2))
+
 # [1.3.0](https://github.com/paulAlexSerban/prj--boston-film-festival--website/compare/v1.2.1...v1.3.0) (2023-08-08)
 
 

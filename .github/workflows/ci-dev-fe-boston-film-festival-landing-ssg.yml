@@ -48,9 +48,7 @@ jobs:
 
       - name: "🔧  Install npm@latest & CI Deps"
         if: ${{ always() }}
-        run: |
-          npm i -g npm@latest
-          npm ci
+        run: npm ci
 
       - name: "📦  Install Frontend Landing Website dependencies"
         # if: ${{ steps.changed-frontend-landing-website-files.outputs.any_changed == 'true' }}

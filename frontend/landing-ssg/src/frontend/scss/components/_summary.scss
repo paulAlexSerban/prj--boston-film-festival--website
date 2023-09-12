@@ -10,15 +10,13 @@
 
   &__title {
       font-family: $title-font;
+        font-size: 32px;
+        line-height: 36px;
   }
 
   &__text {
       font-family: $text-font;
       font-size: 18px;
-
-      @media (min-width: $tablet) {
-          font-size: 15px;
-      }
-
+      line-height: 24px;
   }
 }

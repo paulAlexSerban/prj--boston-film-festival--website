@@ -1,6 +1,8 @@
 .carousel {
     &__title {
         font-family: $title-font;
+          font-size: 32px;
+          line-height: 36px;
     }
 
     &__block-container {
@@ -14,7 +16,7 @@
     }
 
     &__indicators {
-        bottom: 40px;
+        bottom: 0;
     }
 
     &__control-button {
@@ -59,7 +61,7 @@
         font-weight: bold;
         font-family: $title-font;
         position: absolute;
-        bottom: 0;
+        bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
 
