@@ -2,9 +2,13 @@
   &__base {
       padding-top: 20px;
   }
+  &__title {
+    font-family: $title-font;
+      font-size: 32px;
+      line-height: 36px;
+}
 
   &__title {
-      font-family: $title-font;
       color: $text-and-borders;
   }
 
@@ -15,11 +19,17 @@
   &__card-title {
       font-family: $title-font;
       color: $text-and-borders;
-      font-size: 25px;
+      font-size: 23px;
+        line-height: 27px;
   }
 
   &__card-body {
       font-family: $text-font;
       color: $text-and-borders;
+  }
+
+  &__card-text, &__card-link {
+      font-size: 16px;
+      line-height: 20px;
   }
 }

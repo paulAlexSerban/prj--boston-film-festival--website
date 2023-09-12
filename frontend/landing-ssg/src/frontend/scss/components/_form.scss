@@ -9,6 +9,8 @@
   &__title {
       font-family: $title-font;
       color: $text-and-borders;
+        font-size: 32px;
+        line-height: 36px;
   }
 
   &__field {
@@ -22,6 +24,7 @@
   &__input {
       border: 2px solid $text-and-borders;
       font-family: $text-font;
+      margin-top: 10px;
   }
 
   &__date {

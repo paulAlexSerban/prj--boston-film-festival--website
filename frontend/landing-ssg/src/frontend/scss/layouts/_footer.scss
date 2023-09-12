@@ -17,14 +17,23 @@
       margin-top: 10%;
       margin-bottom: 10%;
       color: $main-background;
+
+      &--links {
+        > * + * {
+          margin-top: 10px;
+        }
+      }
+      &--icons {
+        display: flex;
+      }
   }
 
   &__list-item {
       color: $main-background;
+      text-align: left;
   }
 
   &__link {
-      margin: 20px;
       color: $text-and-borders;
       font-size: 15px;
       font-family: $title-font;
@@ -43,5 +52,31 @@
 
   &__contact {
       color: $main-background;
+
+      > * + * {
+            margin-top: 10px;
+            display: block;
+      }
+  }
+
+  &__heading {
+        font-size: 23px;
+        line-height: 28px;
+        font-weight: bold;
+        font-family: $title-font;
+        color: $main-background;
+  }
+
+  &__contact-link {
+        color: $main-background;
+        font-size: 17px;
+        line-height: 21px;
+        font-family: $title-font;
+        color: $main-background;
+    
+        &:hover {
+            text-decoration: none;
+            color: $main-background;
+        }
   }
 }

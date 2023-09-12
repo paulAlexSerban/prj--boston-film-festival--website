@@ -15,7 +15,14 @@
     }
 
     &__image {
-        max-width: 20px;
+        width: 30px;
+        height: 30px;
+        margin: 0px 10px;
         filter: invert(1);
+        transition: filter 0.15s ease-in-out;
+
+        &:hover {
+            filter: invert(0.5);
+        }
     }
 }
